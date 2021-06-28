@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home22.css')}}">
+
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+
+    <title>SEOwave</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/logosmall.png')}}">
+  </head>
+  <body>
+    <div class="containernav">
+      <div id="branding">
+        <img src="{{ url_for('static', filename='images/logobig.png')}}" width="170">
+      </div>
+        <div class="navlist">
+          <a href="{{url_for('home')}}">Home<a>
+          <a href="{{url_for('about')}}">About</a>
+    </div>
+   <br>
+   <br>
+    <div class="container">
+      <div class="seotext">SEOwave</div>
+      <p class="tagtext">Confused about what are youtube tags and how to find suitable tags for your videos? Don't worry here comes the solution to your worries! </p>
+    </div>
+    <br>
+    <br>
+</div>
+<br>
+<br>
+<div class="container bb">
+  <form action="{{ url_for('main') }}" method="POST">
+<div class="search-container">
+  <input type="text" name="search-input" placeholder="Search..." class="search-input">
+  <i class="fas fa-search"></i>    
+        <!-- <a href="/tagsinfo" class="search-btn"> -->
+        <button  type="submit" class="btn btn-info" style="margin-left: 5px; border-radius:50% ;background-color:#dbe4d3; border:#dbe4d3;color:black" value="submit">Search</button>          
+      <!-- </a> -->
+  </div>
+  </form>
+  </div>
+
+  <br>
+<div class="container ll hello">
+  <br>
+   <div class="row">
+      <div class="col-sm"><center>
+        <img  src="{{ url_for('static', filename='images/tt.svg')}}" class="img1"/></center>
+      </div>
+      <div class="col-sm"><center>
+       <h2>Get the best ideas suitable for you!</h2>
+       <p>Just put down the title of your video or any keyword related to your content, we will get you the list of best working videos at present in your field along with it's tags. And here's your work done just jot them down and choose the best ones that suits you..</p></center>
+      </div>
+      </div>
+  <br>
+  <br>
+   <div class="row">
+
+      <div class="col-sm"><center>
+       <h2>Here's youtube scraped for you!</h2>
+       <p>We come with the most viewed videos in your category and srape each and everything beneficial for you out of it....</p></center>
+      </div>
+      <div class="col-sm"><center>
+        <img  src="{{ url_for('static', filename='images/ot.svg')}}" class="img1"/></center>
+        </div>
+      </div>
+</div>
+<br>
+    <footer>
+      <br>
+      <center>
+        <p>&copy; 2021-SEOwave</p>
+      </center>
+     
+    </footer>
+  </body>
+</html>
